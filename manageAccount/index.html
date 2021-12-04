@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome to the Accounting System</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,9 +15,9 @@
         <div id="side-bar" class="active">
             <ul>
                 <h1>Menu</h1>
-                <li>Manage Account</li>
-                <li>Manage Transactions</li>
-                <li>Edit Account</li>
+                <li> <a href="index.html"> Manage Account</a></li>
+                <li> <a href="../manageTransactions/index1.html">Manage Transactions</a> </li>
+                <li> <a href="../EditAccount/index2.html">Edit Account</a> </li>
             </ul>
 
         </div>
@@ -31,14 +31,14 @@
                 <input type="number" name="code" id="code" autocomplete=off placeholder="code" required>
                 <label for="label">Label</label>
                 <input type="text" name="label" id="label" placeholder="Label" autocomplete=off required>
-                <select name="" id="selection" required>
-                    <option value="" aria-readonly="true">Select the account class</option>
-                    <option value="">4 Tiers</option>
-                    <option value="">7 Produits</option>
-                    <option value="">6 Charges</option>
-                    <option value="">5 Trésorerie</option>
+                <select name="" id="classe" required="true">
+                    <option value="" required readonly="true">Select the account class</option>
+                    <option required readonly="true">4 Tiers</option>
+                    <option required readonly="true">7 Produits</option>
+                    <option required readonly="true">6 Charges</option>
+                    <option required readonly="true">5 Trésorerie</option>
                 </select>
-                <input type="image" src="./logoADD.png" alt="logoADD" id="logoADD" onclick="addTask()">
+                <input type="button" value="Add" onclick="addTask()">
 
             </fieldset>
         </form>
@@ -49,9 +49,6 @@
                 <th id="classTab">CLASS</th>
             </thead>
             <tbody id="myAccount-list">
-                <td>
-
-                </td>
             </tbody>
         </table>
         <footer class="footerPage">

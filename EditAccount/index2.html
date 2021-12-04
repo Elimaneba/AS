@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Accounting System</title>
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div id="emballage">
+        <div id="side-bar" class="active">
+            <ul>
+                <h1>Menu</h1>
+                <li> <a href="../manageAccount/index.html"> Manage Account</a></li>
+                <li> <a href="../manageTransactions/index1.html">Manage Transactions</a> </li>
+                <li> <a href="index2.html">Edit Account</a> </li>
+            </ul>
+
+        </div>
+        <h1 id="ko">Edit Account</h1>
+        <strong id="orig">Accounting System</strong>
+        <form method="post" action="" class="form">
+            <fieldset>
+                <legend id="titleAccount">Account</legend>
+
+                <label for="code">Code</label>
+                <input type="number" name="code" id="code" autocomplete=off placeholder="code" required>
+                <label for="label">Label</label>
+                <input type="text" name="label" id="label" placeholder="Label" autocomplete=off required>
+                <select name="" id="classe" required="true">
+                    <option value="" required readonly="true">Select the account class</option>
+                    <option required readonly="true">4 Tiers</option>
+                    <option required readonly="true">7 Produits</option>
+                    <option required readonly="true">6 Charges</option>
+                    <option required readonly="true">5 Trésorerie</option>
+                </select>
+                <input type="button" value="Add" onclick="addTask()">
+
+            </fieldset>
+        </form>
+        <table>
+            <thead>
+                <th id="codeTab">CODE</th>
+                <th id="labelTab">LABEL</th>
+                <th id="classTab">CLASS</th>
+            </thead>
+            <tbody id="myAccount-list">
+            </tbody>
+        </table>
+        <footer class="footerPage">
+            <span class=bigger-120>
+                <span class="bluebolder">AccountingSystem</span>@challage Prod by Elimane BA and Moussa DIOP
+            </span>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="./script2.js"></script>
+</body>
+
+</html>

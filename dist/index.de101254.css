@@ -192,9 +192,9 @@ tbody{
     max-height: 50vh;
 }
 td {
-    color: black;
+    color: #aaa6a6;
     font-family: 'cursive', 'Poppins', sans-serif;
-    font-size: 0.5em;
+    font-size: 1em;
     border-collapse: collapse;
     border-width: 1px;
     padding: 0.5em;
@@ -202,8 +202,7 @@ td {
     border-style: solid;
     border-color: #ffff;
     text-align: center;
+    
 }
-#logoADD{
-    width:40px;
-    height:15px;
-}
+
+/*# sourceMappingURL=index.de101254.css.map */
