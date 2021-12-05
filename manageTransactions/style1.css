@@ -8,9 +8,12 @@ body{
     
     }
     #emballage{
-    min-width: 130vh;
-    position: fixed;
-    min-height: 130vh;
+        min-width: 190vh;
+        min-height: 100vh;
+        scroll-behavior: auto;
+    }
+    footer{
+        position: fixed;
     }
     #side-bar{
     font-family: 'Poppins', sans-serif;

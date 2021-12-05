@@ -8,9 +8,12 @@ display: flex;
 
 }
 #emballage{
-min-width: 130vh;
-position: fixed;
-min-height: 130vh;
+    min-width: 190vh;
+    min-height: 100vh;
+    scroll-behavior: auto;
+}
+footer{
+    position: fixed;
 }
 #side-bar{
 font-family: 'Poppins', sans-serif;
@@ -151,7 +154,7 @@ display: table;
 margin-left: 30%;
 border: radius 2px; 
 }
-#codeTab{
+#dateTab{
     color: #ffff;
     font-family: 'cursive', 'Poppins', sans-serif;
     font-size: 1em;
@@ -164,7 +167,7 @@ border: radius 2px;
     text-align: center;
 }
 
-#labelTab{
+#transacationLabelTab{
     color: #ffff;
     font-family: 'cursive', 'Poppins', sans-serif;
     font-size: 1em;
@@ -176,7 +179,7 @@ border: radius 2px;
     border-color: #ffff;
     text-align: center;
 }
-#classTab{
+#debitTab{
     color: #ffff;
     font-family: 'cursive', 'Poppins', sans-serif;
     font-size: 1em;
@@ -188,6 +191,22 @@ border: radius 2px;
     border-color: #ffff;
     text-align: center;
 }
+#creditTab{
+    color: #ffff;
+    font-family: 'cursive', 'Poppins', sans-serif;
+    font-size: 1em;
+    border-collapse: collapse;
+    border-width: 1px;
+    padding: 0.5em;
+    width: 30%;
+    border-style: solid;
+    border-color: #ffff;
+    text-align: center;
+    line-height: 1.75;
+    padding-left: 80px;
+    padding-right: 50px;
+}
+
 tbody{
     color: #ffff;
     line-height: 1.75;

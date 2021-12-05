@@ -27,10 +27,10 @@
             <fieldset>
                 <legend id="titleAccount">Account</legend>
 
-                <label for="code">Code</label>
-                <input type="number" name="code" id="code" autocomplete=off placeholder="code" required>
-                <label for="label">Label</label>
-                <input type="text" name="label" id="label" placeholder="Label" autocomplete=off required>
+                <label for="date1">Firt date</label>
+                <input type="date" name="date1" id="date1" required>
+                <label for="date2">Last date</label>
+                <input type="date" name="date2" id="date2" required>
                 <select name="" id="classe" required="true">
                     <option value="" required readonly="true">Select the account class</option>
                     <option required readonly="true">4 Tiers</option>
@@ -44,9 +44,11 @@
         </form>
         <table>
             <thead>
-                <th id="codeTab">CODE</th>
-                <th id="labelTab">LABEL</th>
-                <th id="classTab">CLASS</th>
+                <th id="dateTab">Date</th>
+                <th id="transacationLabelTab">Transaction Label</th>
+                <th id="debitTab">Debit</th>
+                <th id="creditTab"> Credit</th>
+
             </thead>
             <tbody id="myAccount-list">
             </tbody>

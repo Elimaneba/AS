@@ -8,9 +8,9 @@ display: flex;
 
 }
 #emballage{
-min-width: 130vh;
-position: fixed;
-min-height: 130vh;
+min-width: 190vh;
+min-height: 100vh;
+scroll-behavior: auto;
 }
 #side-bar{
 font-family: 'Poppins', sans-serif;
@@ -89,6 +89,7 @@ cursor: pointer;
     text-align: center;
     font-size: 98% ;
     margin-left: 520px;
+    
 }
 .bigger-120:hover{
     transform: scale(1.2);
@@ -100,6 +101,7 @@ cursor: pointer;
 .bluebolder{
     color:lightseagreen ;
     opacity: 0.8;
+    
 }
 #ko{
     font-size: 3.5em;
@@ -199,7 +201,7 @@ tbody{
     margin-left: 30%;
     display: table-row-group;
     vertical-align: middle;
-    max-height: 50vh;
+    scroll-behavior: auto;
 }
 td {
     color: #aaa6a6;
@@ -213,4 +215,7 @@ td {
     border-color: #ffff;
     text-align: center;
     
+}
+footer{
+    position: fixed;
 }

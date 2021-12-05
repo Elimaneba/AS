@@ -1,52 +1,38 @@
 function addTask() {
-  let toDoDate = date.value;
-  let toDoObject = object.value;
+  let toDate = date.value;
+  let toObjet = object.value;
   let toDoCode = code.value;
-  let toDoCredit = credit.value;
-  let toDoDebit = Debit.value;
-  let toDoCode2 = code2.value;
-  let toDoCredit2 = credit2.value;
-  let toDoDebit2 = Debit2.value;
-
-  if (
-    toDoCode < 0 ||
-    toDoCode2 < 0 ||
-    toDoObject.length < 2 ||
-    toDoCredit < 0 ||
-    toDoDebit < 0
-  ) {
-    alert("Revoyez votre saisi");
+  let toDocod2 = code2.value;
+  let toDodebit = debit.value;
+  let toDocredit2 = credit2.value;
+  let toDodebit2 = debit2.value;
+  let toDocredit = credit.value;
+  if (toObjet < 0 || toObjet.length < 3 || toDoCode.length < 3) {
+    alert("Revoir votre saisi");
+  } else if (toDocredit2 !== toDodebit || toDocredit !== toDodebit2) {
+    alert("Attention ! Le montant débité doit etre le meme crédité");
   } else {
     let table = document.getElementById("myAccount-list");
     var ligne = table.insertRow(-1);
 
     var tagTr = document.getElementsByTagName("tr");
     var indexTr = toDoCode;
-    var indexTr_ = toDoCode2;
-    var _indexTr = toDoCredit;
-    var index_Tr = toDoCredit2;
-    var inde_xTr = toDoDebit;
-    var ind_exTr = toDoDebit2;
 
-    var aMountDebit = inde_xTr + ind_exTr;
-    var aMountCredit = _indexTr + index_Tr;
+    let colonne2 = ligne.insertCell(0);
+    colonne2.innerHTML += toDate;
 
-    let colonne1 = ligne.insertCell(0);
-    colonne1.innerHTML += toDoDate;
-
-    let colonne2 = ligne.insertCell(1);
-    colonne2.innerHTML += indexTr;
+    let colonne1 = ligne.insertCell(1);
+    colonne1.innerHTML += indexTr;
 
     let colonne3 = ligne.insertCell(2);
-    colonne3.innerHTML += indexTr_;
+    colonne3.innerHTML += toDocod2;
 
     let colonne4 = ligne.insertCell(3);
-    colonne4.innerHTML += toDoObject;
-
+    colonne4.innerHTML += toObjet;
     let colonne5 = ligne.insertCell(4);
-    colonne5.innerHTML += aMountDebit;
+    colonne5.innerHTML += toDodebit;
 
     let colonne6 = ligne.insertCell(5);
-    colonne6.innerHTML += aMountCredit;
+    colonne6.innerHTML += toDocredit2;
   }
 }
