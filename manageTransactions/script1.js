@@ -7,6 +7,7 @@ function addTask() {
   let toDocredit2 = credit2.value;
   let toDodebit2 = debit2.value;
   let toDocredit = credit.value;
+
   if (toObjet < 0 || toObjet.length < 3 || toDoCode.length < 3) {
     alert("Revoir votre saisi");
   } else if (toDocredit2 !== toDodebit || toDocredit !== toDodebit2) {
@@ -29,6 +30,7 @@ function addTask() {
 
     let colonne4 = ligne.insertCell(3);
     colonne4.innerHTML += toObjet;
+
     let colonne5 = ligne.insertCell(4);
     colonne5.innerHTML += toDodebit;
 
